@@ -2,3 +2,5 @@ db
 **/languages
 **/plugins
 **/upgrade
+**/.idea
+**/.DS_Store
