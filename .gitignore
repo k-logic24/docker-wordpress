@@ -1,6 +1,6 @@
 #directory
 db
-!/wp/wp-content/
+wp
 
 #setting
 .idea
