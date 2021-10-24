@@ -8,10 +8,10 @@ services:
         volumes:
             - ./db/mysql:/var/lib/mysql
         environment:
-            MYSQL_ROOT_PASSWORD: wordpress
-            MYSQL_DATABASE: wordpress
-            MYSQL_USER: wordpress
-            MYSQL_PASSWORD: wordpress
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: wp_db
+            MYSQL_USER: wp_user
+            MYSQL_PASSWORD: wp_pw
     wordpress:
         container_name: "${PRODUCTION_NAME}_wp"
         depends_on:
@@ -23,8 +23,8 @@ services:
             - ./wp/wp-content:/var/www/html/wp-content
         environment:
             WORDPRESS_DB_HOST: db:3306
-            WORDPRESS_DB_USER: wordpress
-            WORDPRESS_DB_PASSWORD: wordpress
+            WORDPRESS_DB_USER: wp_db
+            WORDPRESS_DB_PASSWORD: wp_pw
     phpmyadmin:
         container_name: "${PRODUCTION_NAME}_phpmyadmin"
         image: phpmyadmin/phpmyadmin:latest
