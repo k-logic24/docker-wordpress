@@ -7,6 +7,10 @@ dockerでwordpress環境の構築テンプレート。
 ## 停止
 `docker compose down`
 
+## メモ
+app配下にwp-includesがあるのは、エディタ（IDE）都合上、integration使用で読み込ませるため。  
+不要なら削除しても構わない。
+
 ## エラー対応
 - Error establishing a database connection
 古いvolumeがないか確認する。削除。  
