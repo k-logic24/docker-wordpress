@@ -1,12 +1,7 @@
 #directory
 db
-wp
+app
 
 #setting
 .idea
 .DS_Store
-
-#theme
-twentynineteen
-twentyseventeen
-twentysixteen
